@@ -1,0 +1,10 @@
+<div>Available options for tracking change detection with OnPush strategy</div>
+<app-object-manipulations [message]="message1">
+  <button (click)="changeAuthorForObject(AllowMutation.YES)" class="change-by-object-mutation">Change author by object mutation</button>
+  <button (click)="changeAuthorForObject(AllowMutation.NO)" class="change-by-changing-ref">Change author by changing object ref</button>
+</app-object-manipulations>
+<app-observable-manipulations [message]="message2$.asObservable()">
+  <button (click)="changeAuthorForSubject()">Change author for subject</button>
+</app-observable-manipulations>
+
+

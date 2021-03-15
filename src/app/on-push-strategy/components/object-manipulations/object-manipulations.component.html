@@ -1,0 +1,19 @@
+<h1>Change detection with object</h1>
+<div>Author name <b>{{message.author}}</b></div>
+<div class="functionality-section">
+  <span>Change data by object mutation in parent</span>
+  <br><ng-content select=".change-by-object-mutation"></ng-content>
+  <br><button (click)="detectChangesByEvent()">{{buttonMessage}}</button>
+</div>
+<div class="functionality-section">
+  <span>Change data by changing object ref</span>
+  <br><ng-content select=".change-by-changing-ref"></ng-content>
+</div>
+<div class="functionality-section">
+  <span>Click to fetch new data and detect changes</span>
+  <br><button (click)="detectChangesByHttpCall()">{{buttonMessage}}</button>
+</div>
+<div class="functionality-section">
+  <span>Click to change data in object with setTimeout and detect changes</span>
+  <br><button (click)="detectChangesByTimeout()">{{buttonMessage}}</button>
+</div>
