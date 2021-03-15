@@ -1,5 +1,6 @@
 <h1>Change detection with observable</h1>
 <div class="functionality-section">
+  <!-- async pipe receives ew value without trigger cd manually -->
   <div>Author name for async pipe: {{(message | async)?.author}}</div>
   <div>Author name for subscription: {{author}}</div>
   <ng-content></ng-content>

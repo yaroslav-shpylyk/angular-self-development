@@ -16,7 +16,6 @@ export class ObservableManipulationsComponent implements OnInit {
 
   public ngOnInit(): void {
     this.message.subscribe((message: Message) => {
-      console.log(message);
       this.author = message.author;
       this.changeDetector.markForCheck();
     });
