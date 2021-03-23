@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./on-push-strategy/on-push-strategy.module').then(m => m.OnPushStrategyModule)
   },
   {
+    path: 'counter',
+    loadChildren: () => import('./counter/counter.module').then(m => m.CounterModule)
+  },
+  {
     path: '',
     redirectTo: 'on-push-strategy',
     pathMatch: 'full'
